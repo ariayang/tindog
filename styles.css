@@ -1,6 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Ubuntu', sans-serif;
+    text-align: center;
 }
 
 h1 {
@@ -10,27 +11,37 @@ h1 {
     font-weight: 900;
 }
 
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.8rem;
+h2, h3, h5 {
+    font-family: 'Montserrat', sans-serif;    
     line-height: 1.5;
     font-weight: 700;
+}
+
+h2 {
+    font-size: 2.8rem;
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 2.4rem;
-    line-height: 1.5;
-    font-weight: 700;
 }
 
 h5 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
-    line-height: 1.5;
-    font-weight: 700;
 }
 
+/********************* CONTAINERS *************************/
+.container-fluid {
+    padding: 7% 15%;
+}
+
+/********************* SECTIONS *************************/
+.colored-section {
+    background-color: #ff4c68; /*rgb(209, 55, 94)*/;
+}
+
+.white-section {
+    background-color: #fff;
+}
 
 /********************* NAV BAR *************************/
 .navbar-brand {
@@ -56,11 +67,14 @@ h5 {
 
 /********************* TITLE *************************/
 #title {
-    background-color: #ff4c68; /*rgb(209, 55, 94)*/;
     color: white;
 }
 
-.container-fluid {
+.title-text {
+    text-align: left;
+}
+
+#title .container-fluid {
     padding: 3% 15% 7%;
 }
 
@@ -97,20 +111,7 @@ h5 {
 
 /********************* Features *************************/
 #features {
-    text-align: center;
-    padding: 7% 15%;
-    background-color: #fff;
     position: relative;
-}
-
-.features-box {
-    padding: 4.5%;
-}
-
-.features-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
 }
 
 .features-description {
@@ -129,9 +130,8 @@ h5 {
 }
 
 /********************* TESTIMONIALS *************************/
-#testimonials {
-    text-align: center;
-    background-color: #ff4c68;
+#testimonials.colored-section {
+    background-color: #ef8172;
     color: #fff;
 }
 
@@ -141,14 +141,9 @@ h5 {
     margin: 20px;
 }
 
-.carousel-item {
-    padding: 7% 15%;
-}
-
 /********************* PRESS *************************/
-#press {
-    background-color: #ff4c68;
-    text-align: center;
+#press.colored-section {
+    background-color: #ef8172;
     padding-bottom: 3%;
 }
 
@@ -158,9 +153,7 @@ h5 {
 }
 
 /********************* PRICING *************************/
-#pricing {
-    padding: 7% 15%;
-}
+
 .pricing-title-description {
     color: grey;
 }
@@ -169,11 +162,13 @@ h5 {
     color: grey;
 }
 
+.pricing-column {
+    padding: 3% 2%;
+  }
+  
+
 /********************* Call to Action *************************/
 #cta {
-    background-color: #ff4c68;
-    text-align: center;
-    padding: 7% 15%;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -182,11 +177,6 @@ h5 {
 }
 
 /********************* FOOTER *************************/
-#footer {
-    background-color:#fff;
-    text-align: center;
-    padding: 7% 15%;
-}
 .footer-text{
     color:#8f8f8f;
 }
