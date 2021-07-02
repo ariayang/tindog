@@ -18,15 +18,15 @@ h2, h3, h5 {
 }
 
 h2 {
-    font-size: 2.8rem;
+    font-size: 3.5rem;
 }
 
 h3 {
-    font-size: 2.4rem;
+    font-size: 3rem;
 }
 
 h5 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
 
 /********************* CONTAINERS *************************/
@@ -153,6 +153,9 @@ h5 {
 }
 
 /********************* PRICING *************************/
+#pricing {
+    padding: 100px;
+}
 
 .pricing-title-description {
     color: grey;
@@ -166,6 +169,7 @@ h5 {
     padding: 3% 2%;
   }
   
+  @media 
 
 /********************* Call to Action *************************/
 #cta {
